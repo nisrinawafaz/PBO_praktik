@@ -49,7 +49,8 @@ public class operatorMenghitung {
                 }
             System.out.println(hasilHitung);
         }
-        
+        else{
+            System.out.println("Input Tidak Sesuai");
+        }
     }
-    
 }

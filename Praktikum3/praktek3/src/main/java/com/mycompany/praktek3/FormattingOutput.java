@@ -13,10 +13,8 @@ import java.util.Scanner;
 public class FormattingOutput {
     public static void main(String[] args) {
 	Scanner in = new Scanner(System.in);
-	//menangkap 3 inputan
 	String [][] simpan = new String[3][];
-		
-	//split inputan dan kirim ke variable store
+        
 	for(int i=0; i<3; i++) {
             String input = in.nextLine();
             simpan[i]= input.split(" ");

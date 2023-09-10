@@ -24,6 +24,4 @@ public class bukaTutupJalan {
             System.out.println("Berhenti");
         }
     }
-    
-    
 }

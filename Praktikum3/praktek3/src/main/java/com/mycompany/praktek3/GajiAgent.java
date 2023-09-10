@@ -17,7 +17,6 @@ public class GajiAgent {
         int gajiPokok = 500000;
         float bonus_penjualan = 0;
         float denda = 0;
-        float bonusItem = input >=15 ?(float) (0.10 * (input * 50000)) :0;
         
         if(input >= 40)
         {
@@ -33,9 +32,11 @@ public class GajiAgent {
             bonus_penjualan = 0;
             denda = (float) (0.15 * (input * 50000));
         }
-        int gaji = (int) (gajiPokok + bonus_penjualan + bonusItem - denda) ;
+        else{
+            bonus_penjualan = (float) (0.10 * (input * 50000));
+            denda = 0;
+        }
+        int gaji = (int) (gajiPokok + bonus_penjualan - denda) ;
         System.out.println(gaji);
     }
-    
-    
 }
