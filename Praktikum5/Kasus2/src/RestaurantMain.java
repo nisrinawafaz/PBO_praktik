@@ -45,11 +45,11 @@ public class RestaurantMain {
         }
         
         System.out.println("Daftar Menu : ");
-        System.out.println("========================================================= ");
+        System.out.println("=============================================== ");
         
         do{
             menu.tampilMenuMakanan();
-            System.out.print("Masukkan pesanan anda (ID menu) : ");
+            System.out.print("Masukkan pesanan anda (Nama menu) : ");
             String nama_menu = sc.nextLine();
             find = menu.isOutOfMenu(nama_menu);
             if(find){
